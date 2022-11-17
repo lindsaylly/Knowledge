@@ -1,7 +1,0 @@
-1. Find Missing Items in Another Column
-Create a list of items that are in Column A but missing in Column B:
-
-=QUERY(A2:A,
-   "SELECT A WHERE A <> ''
-    AND NOT A MATCHES '"&TEXTJOIN("|",TRUE,B2:B)&"'
-    ORDER BY A")
