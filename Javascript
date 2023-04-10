@@ -1,0 +1,4 @@
+multiselection:
+window.addEventListener( "pageshow", (e)=> {
+        $(".select2-multiple option:selected").prop("selected", false);
+    });
