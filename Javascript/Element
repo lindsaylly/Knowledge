@@ -1,0 +1,4 @@
+1.remove selected from Multiselect element:
+window.addEventListener( "pageshow", (e)=> {
+        $(".select2-multiple option:selected").prop("selected", false);
+    });
